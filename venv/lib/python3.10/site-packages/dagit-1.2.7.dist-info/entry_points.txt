@@ -1,0 +1,3 @@
+[console_scripts]
+dagit = dagit.cli:main
+dagit-debug = dagit.debug:main

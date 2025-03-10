@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: dagit
+Version: 1.2.7
+Summary: Web UI for dagster.
+Home-page: https://github.com/dagster-io/dagster
+Author: Elementl
+Author-email: hello@elementl.com
+License: Apache-2.0
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click (<9.0,>=7.0)
+Requires-Dist: dagster (==1.2.7)
+Requires-Dist: dagster-graphql (==1.2.7)
+Requires-Dist: starlette
+Requires-Dist: uvicorn[standard]
+Provides-Extra: notebook
+Requires-Dist: nbconvert ; extra == 'notebook'
+Provides-Extra: test
+Requires-Dist: starlette[full] ; extra == 'test'
+
+============
+Dagster UI
+============
+
+Usage
+~~~~~
+Eg in dagster_examples
+
+.. code-block:: sh
+
+  dagit -p 3333
+
+Running dev ui:
+
+.. code-block:: sh
+  REACT_APP_BACKEND_ORIGIN="http://localhost:3333" yarn start
+

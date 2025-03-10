@@ -1,0 +1,17 @@
+version: 2
+sources:
+  - name: warehouse
+    description: "Data source for gold order summary"
+    tables:
+      - name: gold_order_summary
+        description: "Summary of orders per order_id"
+        # columns:
+        #   - name: order_id
+        #     description: "Unique identifier for the order"
+        #     tests:
+        #       - not_null
+        #       - unique
+        #   - name: customer_id
+        #     description: "Customer ID associated with the order"
+        #     tests:
+        #       - not_null

@@ -1,0 +1,53 @@
+
+
+============================== 2025-03-10 02:16:56.186127 | 640be788-1931-4497-af93-b190f91dd90c ==============================
+[0m02:16:56.186127 [info ] [MainThread]: Running with dbt=1.4.5
+[0m02:16:56.187695 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/prj/Youtube_dm1/etl_pipeline', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m02:16:56.187913 [debug] [MainThread]: Tracking: tracking
+[0m02:16:56.189448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d4d89b6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d4d898310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d4d89b340>]}
+[0m02:17:07.056637 [debug] [MainThread]: Starter project path: /home/hntrang/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m02:17:10.853329 [info ] [MainThread]: Profile brizillian_ecom written to /home/prj/Youtube_dm1/etl_pipeline/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m02:17:10.853936 [info ] [MainThread]: 
+Your new dbt project "brizillian_ecom" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m02:17:10.854411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d4e63e590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d4e9044c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d4d898280>]}
+[0m02:17:10.854748 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2025-03-10 02:17:31.328668 | 43e6d1c7-73e0-4196-80cc-874fb5eb4966 ==============================
+[0m02:17:31.328668 [info ] [MainThread]: Running with dbt=1.4.5
+[0m02:17:31.330251 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/prj/Youtube_dm1/etl_pipeline', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m02:17:31.330460 [debug] [MainThread]: Tracking: tracking
+[0m02:17:31.332118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a66dcc6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a66dcc3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a66dcc5b0>]}
+[0m02:17:38.453226 [debug] [MainThread]: Starter project path: /home/hntrang/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m02:17:40.288223 [info ] [MainThread]: 
+Your new dbt project "dbt_ecommerce" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m02:17:40.288766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a67bd86d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a66dcc130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0a66dce7a0>]}
+[0m02:17:40.289231 [debug] [MainThread]: Flushing usage events

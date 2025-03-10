@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: etl_pipeline
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: <3.13,>=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: dagster
+Requires-Dist: dagster-cloud
+Provides-Extra: dev
+Requires-Dist: dagster-webserver; extra == "dev"
+Requires-Dist: pytest; extra == "dev"

@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: dagster-dbt
+Version: 0.18.7
+Summary: A Dagster integration for dbt
+Home-page: https://github.com/dagster-io/dagster/tree/master/python_modules/libraries/dagster-dbt
+Author: Elementl
+Author-email: hello@elementl.com
+License: Apache-2.0
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: dagster (==1.2.7)
+Requires-Dist: dbt-core (>=1.1)
+Requires-Dist: networkx
+Requires-Dist: requests
+Requires-Dist: typer[all]
+Provides-Extra: test
+Requires-Dist: Jinja2 ; extra == 'test'
+Requires-Dist: dbt-rpc (<0.3.0) ; extra == 'test'
+Requires-Dist: dbt-duckdb ; extra == 'test'
+Requires-Dist: dagster-duckdb ; extra == 'test'
+Requires-Dist: dagster-duckdb-pandas ; extra == 'test'
+

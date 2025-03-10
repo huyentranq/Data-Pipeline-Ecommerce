@@ -1,0 +1,12 @@
+dbt_ecommerce:
+  outputs:
+    dev:
+      dbname: postgres
+      host: localhost
+      password: admin123
+      port: 5432
+      schema: analytics
+      threads: 1
+      type: postgres
+      user: admin
+  target: dev
