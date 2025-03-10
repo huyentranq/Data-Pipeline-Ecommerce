@@ -5,7 +5,7 @@
 This project implements a comprehensive **ETL (Extract, Transform, Load)** pipeline using **Dagster**, **MinIO**, and **DBT** to process the **Brazilian e-commerce dataset**. The entire pipeline is designed to extract raw data, transform it through several processing stages, and load it into a structured dataset for Business Analytics (BA) purposes.
 
 ---
-![Data pipeline Process](design_pipeline.png)
+![Data pipeline Process](images/design_pipeline.png)
 ## Project Overview
 
 The goal of this project is to process and transform raw e-commerce data from multiple sources, build a dataset through several stages, and prepare the data for analysis. The process is broken down into multiple steps, including data extraction from MySQL, transformation using **MinIO** (data lake), and finally loading it into a **PostgreSQL** data warehouse.
@@ -51,32 +51,53 @@ Below is an overview of the directory structure, explaining each file and its pu
 
 Explanation of the Structure:
 /dagster_home: Home directory for Dagster, likely containing configuration and workspace-related files.
+
 /Dataset: Stores raw and processed dataset files.
+
 /Dockerimages: Contains Docker images used in the project.
+
 /etl_pipeline: Root directory for ETL logic.
+
 /dbt_ecommerce: Stores DBT transformations for e-commerce data.
+
 /etl_pipeline: Main ETL processing folder.
+
 /assets: Contains Python scripts for processing different layers:
+
 bronze_layer.py: Handles raw data ingestion.
+
 silver_layer.py: Processes and transforms data.
+
 warehouse_layer.py: Final step before storing in PostgreSQL.
+
 /resources: Stores I/O managers for different storage systems:
+
 minio_io_manager.py: Manages MinIO interactions.
+
 mysql_io_manager.py: Manages MySQL interactions.
+
 psql_io_manager.py: Manages PostgreSQL interactions.
+
 __init__.py: Initializes the Python package.
+
 Dockerfile: Defines the ETL environment setup.
+
 requirements.txt: Lists dependencies for the project.
+
 docker-compose.yaml: Configuration for containerized deployment.
+
 /env: Environment variables file.
+
 /Makefile: Contains commands for automation.
+
 /load_data: Folder for scripts or files related to loading datasets.
+
 README.md: Documentation for the project.
 
 ---
 
 ## ETL Pipeline Process
-![ETL detail process](etl_process.png)
+![ETL detail process](images/etl_process.png)
 
 1. **Bronze Layer: Raw data is upload from MySQL (MySQL to MinIO)**
 
@@ -89,7 +110,7 @@ README.md: Documentation for the project.
      - `product_category_name_translation`
 
 
-   ![Bronze Layer Process](bronze_layer.png)
+   ![Bronze Layer Process](images/bronze_layer.png)
 
 2. **Silver Layer: Data Processing and Transformation**
 
@@ -98,7 +119,7 @@ README.md: Documentation for the project.
      - Aggregating payment data by `order_id` to get the total payment value and count of payment types for each order.
      - Aggregating review data to calculate the average review score for each order.
 
-   ![Silver Layer Process](silver_layer.png)
+   ![Silver Layer Process](images/silver_layer.png)
 
 3. **Gold Layer: Final Dataset Creation**
 
@@ -108,7 +129,7 @@ README.md: Documentation for the project.
 
    - Any missing review scores for `order_id` are marked as `NA`.
 
-   ![Gold Layer And Warehouse LayerProcess](gold_warehouse_layer.png)
+   ![Gold Layer And Warehouse LayerProcess](images/gold_warehouse_layer.png)
 
 4. **Warehouse Layer: Data Loading to PostgreSQL**
 
@@ -168,5 +189,3 @@ Cloud platforms like **AWS** will also be considered for scalability and cloud s
 This ETL pipeline leverages powerful tools like **Dagster**, **MinIO**, **DBT**, and **PostgreSQL** to create a scalable, efficient data processing framework for the Brazilian e-commerce dataset. The resulting dataset will support a variety of business analytics applications, enabling better decision-making based on comprehensive order, payment, and review data.
 
 ---
-
-Let me know if you need help inserting the images into your README or any other assistance!
